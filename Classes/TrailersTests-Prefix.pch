@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'TrailersTests' target in the 'TrailersTests' project
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+#endif
