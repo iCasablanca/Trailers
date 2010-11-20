@@ -37,7 +37,7 @@ static UIImage *coverHighlighted = nil;
 		self.opaque = NO;
 		self.clipsToBounds = NO;
     }
-        
+	
     self.movie = aMovie;
     self.frame = frame;
     expanded = NO;
@@ -84,15 +84,15 @@ static UIImage *coverHighlighted = nil;
 		
 		[[UIColor blackColor] set];
 		[self.movie.title drawInRect:CGRectMake(5.0, 199.0, self.frame.size.width-5.0*2.0, self.frame.size.height-200.0)
-				 withFont:[UIFont boldSystemFontOfSize:11]
-			lineBreakMode:UILineBreakModeWordWrap
-				alignment:UITextAlignmentCenter];
+							withFont:[UIFont boldSystemFontOfSize:11]
+					   lineBreakMode:UILineBreakModeWordWrap
+						   alignment:UITextAlignmentCenter];
 		
 		[[UIColor whiteColor] set];
 		[self.movie.title drawInRect:CGRectMake(5.0, 200.0, self.frame.size.width-5.0*2.0, self.frame.size.height-200.0)
-				 withFont:[UIFont boldSystemFontOfSize:11]
-			lineBreakMode:UILineBreakModeWordWrap
-				alignment:UITextAlignmentCenter];
+							withFont:[UIFont boldSystemFontOfSize:11]
+					   lineBreakMode:UILineBreakModeWordWrap
+						   alignment:UITextAlignmentCenter];
 	}
 }
 -(void)setInitialRect:(CGRect)rect{
@@ -112,7 +112,7 @@ static UIImage *coverHighlighted = nil;
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event{
 	highlighted = NO;
     [self setNeedsDisplay];
-
+	
 	if( detailView == NULL ){
 		
 		if( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad ){
@@ -120,7 +120,7 @@ static UIImage *coverHighlighted = nil;
 		}else{
 			detailView = [[MovieDetailPhoneView alloc] initWithNibName:@"MovieDetailPhoneView" bundle:nil];
 		}
-
+		
 		detailView.movieView = self;
         [self.movie loadMoreInfo];
 	}
@@ -189,8 +189,8 @@ static UIImage *coverHighlighted = nil;
 		releaseString = [NSString stringWithString:@"In theatres: TBA"];
 	}
 	/*if(![rating isEqual:@"Not yet rated"]){
-		releaseString = [releaseString stringByAppendingFormat:@" %@ Rated: %@",[NSString stringWithUTF8String:"•"],rating];
-	}*/
+	 releaseString = [releaseString stringByAppendingFormat:@" %@ Rated: %@",[NSString stringWithUTF8String:"•"],rating];
+	 }*/
 	[detailView setReleaseDate:releaseString];
 	[detailView setGenre:self.movie.genre];
 	[detailView setDirector:self.movie.director];
@@ -202,6 +202,8 @@ static UIImage *coverHighlighted = nil;
 - (void)updateDetailDescription;
 {
     [detailView setDescription:self.movie.description];
+    [detailView setDirector:self.movie.director];
+    [detailView setGenre:self.movie.genre];
     [detailView stopAnimating];
     [detailView layoutSubviews];
 }
@@ -250,7 +252,7 @@ static UIImage *coverHighlighted = nil;
     [posterData release];
     [posterConnection release];
     [trailersViewController release];
-
+	
     [super dealloc];
 }
 
