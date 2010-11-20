@@ -1,7 +1,7 @@
 TTrailers
 v7
 r0
-t311929214.299377
+t311929824.257413
 cCheck dependencies
 cProcessInfoPlistFile /Users/lucas/Desktop/Trailers/build/Debug-iphonesimulator/Trailers.app/Info.plist Trailers-Info.plist
 cProcessPCH /var/folders/lr/lrcsUQH9E14zyqYv2H0UJk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Trailers-Prefix-gkkhmnwawyqowjfeeghkfkvmotwf/Trailers-Prefix.pch.gch Trailers-Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
@@ -283,41 +283,41 @@ i"MovieView.h"
 i"MenuController.h"
 
 N/Users/lucas/Desktop/Trailers/Classes/iPad/TrailersAppDelegate_iPad.h
-c000000004CE4C73B000000000000015E
-t1290061627
+c000000004CE74824000000000000015E
+t1290225700
 s350
 i<UIKit/UIKit.h>
 i"TrailersAppDelegate.h"
 i"TrailersViewController.h"
 
 N/Users/lucas/Desktop/Trailers/Classes/iPad/TrailersAppDelegate_iPad.m
-c000000004CE4C7400000000000000868
-t1290061632
+c000000004CE748240000000000000868
+t1290225700
 s2152
 i"TrailersAppDelegate_iPad.h"
 
 N/Users/lucas/Desktop/Trailers/Classes/iPad/en.lproj/MainWindow_iPad.xib
-c000000004CE4C5F90000000000001CDE
-t1290061305
+c000000004CE748240000000000001CDE
+t1290225700
 s7390
 
 N/Users/lucas/Desktop/Trailers/Classes/iPhone/TrailersAppDelegate_iPhone.h
-c000000004CE4C72D0000000000000162
-t1290061613
+c000000004CE748240000000000000162
+t1290225700
 s354
 i<UIKit/UIKit.h>
 i"TrailersAppDelegate.h"
 i"TrailersViewController.h"
 
 N/Users/lucas/Desktop/Trailers/Classes/iPhone/TrailersAppDelegate_iPhone.m
-c000000004CE4C7250000000000000B62
-t1290061605
+c000000004CE748240000000000000B62
+t1290225700
 s2914
 i"TrailersAppDelegate_iPhone.h"
 
 N/Users/lucas/Desktop/Trailers/Classes/iPhone/en.lproj/MainWindow_iPhone.xib
-c000000004CE4C0250000000000004104
-t1290059813
+c000000004CE748240000000000004104
+t1290225700
 s16644
 
 N/Users/lucas/Desktop/Trailers/Default-Landscape~ipad.png
@@ -1226,7 +1226,7 @@ s2006
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies311929199#311929199#0(0"0(0#1#0"8631719520#0"0#
+lSLF07#2@18"Check dependencies311929824#311929824#0(0"0(0#1#0"8634828192#0"0#
 
 CCompileC build/Trailers.build/Debug-iphonesimulator/Trailers.build/Objects-normal/i386/CDataScanner.o /Users/lucas/Desktop/Trailers/TouchJSON/CDataScanner.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s311755879.216204
