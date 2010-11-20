@@ -23,10 +23,6 @@
 		A00FE8B51294F7A50076295A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A00FE8B41294F7A50076295A /* Foundation.framework */; };
 		A00FE8BC1294F7A50076295A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A00FE8BA1294F7A50076295A /* InfoPlist.strings */; };
 		A00FE8C11294F7A50076295A /* TrailersAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A00FE8C01294F7A50076295A /* TrailersAppDelegate.m */; };
-		A00FE8C41294F7A50076295A /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = A00FE8C21294F7A50076295A /* MainWindow_iPhone.xib */; };
-		A00FE8C71294F7A50076295A /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = A00FE8C51294F7A50076295A /* MainWindow_iPad.xib */; };
-		A00FE8CA1294F7A50076295A /* TrailersAppDelegate_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = A00FE8C91294F7A50076295A /* TrailersAppDelegate_iPhone.m */; };
-		A00FE8CD1294F7A50076295A /* TrailersAppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = A00FE8CC1294F7A50076295A /* TrailersAppDelegate_iPad.m */; };
 		A00FE8D61294F7A50076295A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A00FE8B41294F7A50076295A /* Foundation.framework */; };
 		A00FE8DB1294F7A50076295A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A00FE8DA1294F7A50076295A /* InfoPlist.strings */; };
 		A00FE8DD1294F7A50076295A /* TrailersTests.h in Resources */ = {isa = PBXBuildFile; fileRef = A00FE8DC1294F7A50076295A /* TrailersTests.h */; };
@@ -75,6 +71,10 @@
 		A00FE98E1294FA0A0076295A /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A00FE98D1294FA0A0076295A /* MediaPlayer.framework */; };
 		A00FE9901294FB900076295A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A00FE98F1294FB900076295A /* UIKit.framework */; };
 		A00FE9921294FB990076295A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A00FE9911294FB990076295A /* CoreGraphics.framework */; };
+		A0F358AD1297A96B0072CEBE /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0F358A41297A96B0072CEBE /* MainWindow_iPad.xib */; };
+		A0F358AE1297A96B0072CEBE /* TrailersAppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F358A71297A96B0072CEBE /* TrailersAppDelegate_iPad.m */; };
+		A0F358AF1297A96B0072CEBE /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0F358A91297A96B0072CEBE /* MainWindow_iPhone.xib */; };
+		A0F358B01297A96B0072CEBE /* TrailersAppDelegate_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F358AC1297A96B0072CEBE /* TrailersAppDelegate_iPhone.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -108,12 +108,6 @@
 		A00FE8BB1294F7A50076295A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A00FE8BF1294F7A50076295A /* TrailersAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrailersAppDelegate.h; sourceTree = "<group>"; };
 		A00FE8C01294F7A50076295A /* TrailersAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrailersAppDelegate.m; sourceTree = "<group>"; };
-		A00FE8C31294F7A50076295A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow_iPhone.xib; sourceTree = "<group>"; };
-		A00FE8C61294F7A50076295A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow_iPad.xib; sourceTree = "<group>"; };
-		A00FE8C81294F7A50076295A /* TrailersAppDelegate_iPhone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrailersAppDelegate_iPhone.h; sourceTree = "<group>"; };
-		A00FE8C91294F7A50076295A /* TrailersAppDelegate_iPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrailersAppDelegate_iPhone.m; sourceTree = "<group>"; };
-		A00FE8CB1294F7A50076295A /* TrailersAppDelegate_iPad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrailersAppDelegate_iPad.h; sourceTree = "<group>"; };
-		A00FE8CC1294F7A50076295A /* TrailersAppDelegate_iPad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrailersAppDelegate_iPad.m; sourceTree = "<group>"; };
 		A00FE8D81294F7A50076295A /* TrailersTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TrailersTests-Info.plist"; sourceTree = "<group>"; };
 		A00FE8DA1294F7A50076295A /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = en.lproj/TrailersTests/InfoPlist.strings; sourceTree = "<group>"; };
 		A00FE8DC1294F7A50076295A /* TrailersTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrailersTests.h; sourceTree = "<group>"; };
@@ -176,6 +170,12 @@
 		A00FE98F1294FB900076295A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = /Xcode4/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = "<absolute>"; };
 		A00FE9911294FB990076295A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = /Xcode4/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = "<absolute>"; };
 		A04D959D12950442003F16BE /* Trailers-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Trailers-Prefix.pch"; sourceTree = "<group>"; };
+		A0F358A51297A96B0072CEBE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow_iPad.xib; sourceTree = "<group>"; };
+		A0F358A61297A96B0072CEBE /* TrailersAppDelegate_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrailersAppDelegate_iPad.h; sourceTree = "<group>"; };
+		A0F358A71297A96B0072CEBE /* TrailersAppDelegate_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrailersAppDelegate_iPad.m; sourceTree = "<group>"; };
+		A0F358AA1297A96B0072CEBE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow_iPhone.xib; sourceTree = "<group>"; };
+		A0F358AB1297A96B0072CEBE /* TrailersAppDelegate_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrailersAppDelegate_iPhone.h; sourceTree = "<group>"; };
+		A0F358AC1297A96B0072CEBE /* TrailersAppDelegate_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrailersAppDelegate_iPhone.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,33 +218,11 @@
 			);
 			sourceTree = "<group>";
 		};
-		A00FE8A51294F7A50076295A /* iPhone */ = {
-			isa = PBXGroup;
-			children = (
-				A00FE8C21294F7A50076295A /* MainWindow_iPhone.xib */,
-				A00FE8C81294F7A50076295A /* TrailersAppDelegate_iPhone.h */,
-				A00FE8C91294F7A50076295A /* TrailersAppDelegate_iPhone.m */,
-			);
-			name = iPhone;
-			path = ../iPhone;
-			sourceTree = "<group>";
-		};
-		A00FE8A61294F7A50076295A /* iPad */ = {
-			isa = PBXGroup;
-			children = (
-				A00FE8C51294F7A50076295A /* MainWindow_iPad.xib */,
-				A00FE8CB1294F7A50076295A /* TrailersAppDelegate_iPad.h */,
-				A00FE8CC1294F7A50076295A /* TrailersAppDelegate_iPad.m */,
-			);
-			name = iPad;
-			path = ../iPad;
-			sourceTree = "<group>";
-		};
 		A00FE8A71294F7A50076295A /* Delegates */ = {
 			isa = PBXGroup;
 			children = (
-				A00FE8A51294F7A50076295A /* iPhone */,
-				A00FE8A61294F7A50076295A /* iPad */,
+				A0F358A31297A96B0072CEBE /* iPad */,
+				A0F358A81297A96B0072CEBE /* iPhone */,
 				A00FE8BF1294F7A50076295A /* TrailersAppDelegate.h */,
 				A00FE8C01294F7A50076295A /* TrailersAppDelegate.m */,
 			);
@@ -460,6 +438,26 @@
 			path = JSON;
 			sourceTree = "<group>";
 		};
+		A0F358A31297A96B0072CEBE /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				A0F358A41297A96B0072CEBE /* MainWindow_iPad.xib */,
+				A0F358A61297A96B0072CEBE /* TrailersAppDelegate_iPad.h */,
+				A0F358A71297A96B0072CEBE /* TrailersAppDelegate_iPad.m */,
+			);
+			path = iPad;
+			sourceTree = "<group>";
+		};
+		A0F358A81297A96B0072CEBE /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				A0F358A91297A96B0072CEBE /* MainWindow_iPhone.xib */,
+				A0F358AB1297A96B0072CEBE /* TrailersAppDelegate_iPhone.h */,
+				A0F358AC1297A96B0072CEBE /* TrailersAppDelegate_iPhone.m */,
+			);
+			path = iPhone;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -527,8 +525,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A00FE8BC1294F7A50076295A /* InfoPlist.strings in Resources */,
-				A00FE8C41294F7A50076295A /* MainWindow_iPhone.xib in Resources */,
-				A00FE8C71294F7A50076295A /* MainWindow_iPad.xib in Resources */,
 				A00FE9101294F7B50076295A /* Background.png in Resources */,
 				A00FE9111294F7B50076295A /* iPad-Default-LandscapeLeft.png in Resources */,
 				A00FE9121294F7B50076295A /* iPad-Default-LandscapeRight.png in Resources */,
@@ -562,6 +558,8 @@
 				A007496E129501AF00D70BBF /* MovieDetailPhoneView.xib in Resources */,
 				A007496F129501AF00D70BBF /* MovieDetailView.xib in Resources */,
 				A007497F129501C800D70BBF /* MenuController.xib in Resources */,
+				A0F358AD1297A96B0072CEBE /* MainWindow_iPad.xib in Resources */,
+				A0F358AF1297A96B0072CEBE /* MainWindow_iPhone.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -598,8 +596,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A00FE8C11294F7A50076295A /* TrailersAppDelegate.m in Sources */,
-				A00FE8CA1294F7A50076295A /* TrailersAppDelegate_iPhone.m in Sources */,
-				A00FE8CD1294F7A50076295A /* TrailersAppDelegate_iPad.m in Sources */,
 				A00FE9751294F9100076295A /* CDataScanner.m in Sources */,
 				A00FE9761294F9100076295A /* CFilteringJSONSerializer.m in Sources */,
 				A00FE9771294F9100076295A /* CJSONDeserializer_BlocksExtensions.m in Sources */,
@@ -621,6 +617,8 @@
 				A0074978129501B900D70BBF /* Trailer.m in Sources */,
 				A007497E129501C800D70BBF /* MenuController.m in Sources */,
 				A0074980129501C800D70BBF /* TrailersViewController.m in Sources */,
+				A0F358AE1297A96B0072CEBE /* TrailersAppDelegate_iPad.m in Sources */,
+				A0F358B01297A96B0072CEBE /* TrailersAppDelegate_iPhone.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -643,20 +641,20 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		A00FE8C21294F7A50076295A /* MainWindow_iPhone.xib */ = {
+		A0F358A41297A96B0072CEBE /* MainWindow_iPad.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A00FE8C31294F7A50076295A /* en */,
-			);
-			name = MainWindow_iPhone.xib;
-			sourceTree = "<group>";
-		};
-		A00FE8C51294F7A50076295A /* MainWindow_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A00FE8C61294F7A50076295A /* en */,
+				A0F358A51297A96B0072CEBE /* en */,
 			);
 			name = MainWindow_iPad.xib;
+			sourceTree = "<group>";
+		};
+		A0F358A91297A96B0072CEBE /* MainWindow_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0F358AA1297A96B0072CEBE /* en */,
+			);
+			name = MainWindow_iPhone.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -1,6 +1,4 @@
 /Users/lucas/Desktop/Trailers/build/Trailers.build/Debug-iphonesimulator/Trailers.build/Objects-normal/i386/TrailersAppDelegate.o
-/Users/lucas/Desktop/Trailers/build/Trailers.build/Debug-iphonesimulator/Trailers.build/Objects-normal/i386/TrailersAppDelegate_iPhone.o
-/Users/lucas/Desktop/Trailers/build/Trailers.build/Debug-iphonesimulator/Trailers.build/Objects-normal/i386/TrailersAppDelegate_iPad.o
 /Users/lucas/Desktop/Trailers/build/Trailers.build/Debug-iphonesimulator/Trailers.build/Objects-normal/i386/CDataScanner.o
 /Users/lucas/Desktop/Trailers/build/Trailers.build/Debug-iphonesimulator/Trailers.build/Objects-normal/i386/CFilteringJSONSerializer.o
 /Users/lucas/Desktop/Trailers/build/Trailers.build/Debug-iphonesimulator/Trailers.build/Objects-normal/i386/CJSONDeserializer_BlocksExtensions.o
@@ -22,3 +20,5 @@
 /Users/lucas/Desktop/Trailers/build/Trailers.build/Debug-iphonesimulator/Trailers.build/Objects-normal/i386/Trailer.o
 /Users/lucas/Desktop/Trailers/build/Trailers.build/Debug-iphonesimulator/Trailers.build/Objects-normal/i386/MenuController.o
 /Users/lucas/Desktop/Trailers/build/Trailers.build/Debug-iphonesimulator/Trailers.build/Objects-normal/i386/TrailersViewController.o
+/Users/lucas/Desktop/Trailers/build/Trailers.build/Debug-iphonesimulator/Trailers.build/Objects-normal/i386/TrailersAppDelegate_iPad.o
+/Users/lucas/Desktop/Trailers/build/Trailers.build/Debug-iphonesimulator/Trailers.build/Objects-normal/i386/TrailersAppDelegate_iPhone.o

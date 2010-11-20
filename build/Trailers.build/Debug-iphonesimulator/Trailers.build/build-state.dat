@@ -1,13 +1,11 @@
 TTrailers
 v7
 r0
-t311755880.927775
+t311929214.299377
 cCheck dependencies
 cProcessInfoPlistFile /Users/lucas/Desktop/Trailers/build/Debug-iphonesimulator/Trailers.app/Info.plist Trailers-Info.plist
 cProcessPCH /var/folders/lr/lrcsUQH9E14zyqYv2H0UJk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Trailers-Prefix-gkkhmnwawyqowjfeeghkfkvmotwf/Trailers-Prefix.pch.gch Trailers-Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/Trailers.build/Debug-iphonesimulator/Trailers.build/Objects-normal/i386/TrailersAppDelegate.o /Users/lucas/Desktop/Trailers/Classes/TrailersAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Trailers.build/Debug-iphonesimulator/Trailers.build/Objects-normal/i386/TrailersAppDelegate_iPhone.o /Users/lucas/Desktop/Trailers/Classes/../iPhone/TrailersAppDelegate_iPhone.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Trailers.build/Debug-iphonesimulator/Trailers.build/Objects-normal/i386/TrailersAppDelegate_iPad.o /Users/lucas/Desktop/Trailers/Classes/../iPad/TrailersAppDelegate_iPad.m normal i386 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/Trailers.build/Debug-iphonesimulator/Trailers.build/Objects-normal/i386/CDataScanner.o /Users/lucas/Desktop/Trailers/TouchJSON/CDataScanner.m normal i386 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/Trailers.build/Debug-iphonesimulator/Trailers.build/Objects-normal/i386/CFilteringJSONSerializer.o /Users/lucas/Desktop/Trailers/TouchJSON/Experimental/CFilteringJSONSerializer.m normal i386 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/Trailers.build/Debug-iphonesimulator/Trailers.build/Objects-normal/i386/CJSONDeserializer_BlocksExtensions.o /Users/lucas/Desktop/Trailers/TouchJSON/Experimental/CJSONDeserializer_BlocksExtensions.m normal i386 objective-c com.apple.compilers.gcc.4_2
@@ -29,11 +27,11 @@ cCompileC build/Trailers.build/Debug-iphonesimulator/Trailers.build/Objects-norm
 cCompileC build/Trailers.build/Debug-iphonesimulator/Trailers.build/Objects-normal/i386/Trailer.o /Users/lucas/Desktop/Trailers/Classes/Trailer.m normal i386 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/Trailers.build/Debug-iphonesimulator/Trailers.build/Objects-normal/i386/MenuController.o /Users/lucas/Desktop/Trailers/Classes/MenuController.m normal i386 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/Trailers.build/Debug-iphonesimulator/Trailers.build/Objects-normal/i386/TrailersViewController.o /Users/lucas/Desktop/Trailers/Classes/TrailersViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Trailers.build/Debug-iphonesimulator/Trailers.build/Objects-normal/i386/TrailersAppDelegate_iPad.o /Users/lucas/Desktop/Trailers/Classes/iPad/TrailersAppDelegate_iPad.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Trailers.build/Debug-iphonesimulator/Trailers.build/Objects-normal/i386/TrailersAppDelegate_iPhone.o /Users/lucas/Desktop/Trailers/Classes/iPhone/TrailersAppDelegate_iPhone.m normal i386 objective-c com.apple.compilers.gcc.4_2
 cLd /Users/lucas/Desktop/Trailers/build/Debug-iphonesimulator/Trailers.app/Trailers normal i386
 cGenerateDSYMFile /Users/lucas/Desktop/Trailers/build/Debug-iphonesimulator/Trailers.app.dSYM /Users/lucas/Desktop/Trailers/build/Debug-iphonesimulator/Trailers.app/Trailers
 cCopyStringsFile /Users/lucas/Desktop/Trailers/build/Debug-iphonesimulator/Trailers.app/en.lproj/InfoPlist.strings en.lproj/InfoPlist.strings
-cCompileXIB /Users/lucas/Desktop/Trailers/Classes/../iPhone/en.lproj/MainWindow_iPhone.xib
-cCompileXIB /Users/lucas/Desktop/Trailers/Classes/../iPad/en.lproj/MainWindow_iPad.xib
 cCpResource build/Debug-iphonesimulator/Trailers.app/Background.png Images/Background.png
 cCpResource build/Debug-iphonesimulator/Trailers.app/iPad-Default-LandscapeLeft.png Images/Default/iPad-Default-LandscapeLeft.png
 cCpResource build/Debug-iphonesimulator/Trailers.app/iPad-Default-LandscapeRight.png Images/Default/iPad-Default-LandscapeRight.png
@@ -67,6 +65,8 @@ cCpResource build/Debug-iphonesimulator/Trailers.app/MovieCoverHighlighted.png I
 cCompileXIB /Users/lucas/Desktop/Trailers/Classes/MovieDetailPhoneView.xib
 cCompileXIB /Users/lucas/Desktop/Trailers/Classes/MovieDetailView.xib
 cCompileXIB /Users/lucas/Desktop/Trailers/Classes/MenuController.xib
+cCompileXIB /Users/lucas/Desktop/Trailers/Classes/iPad/en.lproj/MainWindow_iPad.xib
+cCompileXIB /Users/lucas/Desktop/Trailers/Classes/iPhone/en.lproj/MainWindow_iPhone.xib
 cTouch /Users/lucas/Desktop/Trailers/build/Debug-iphonesimulator/Trailers.app
 
 N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk
@@ -281,6 +281,44 @@ i"TrailersViewController.h"
 i"Movie.h"
 i"MovieView.h"
 i"MenuController.h"
+
+N/Users/lucas/Desktop/Trailers/Classes/iPad/TrailersAppDelegate_iPad.h
+c000000004CE4C73B000000000000015E
+t1290061627
+s350
+i<UIKit/UIKit.h>
+i"TrailersAppDelegate.h"
+i"TrailersViewController.h"
+
+N/Users/lucas/Desktop/Trailers/Classes/iPad/TrailersAppDelegate_iPad.m
+c000000004CE4C7400000000000000868
+t1290061632
+s2152
+i"TrailersAppDelegate_iPad.h"
+
+N/Users/lucas/Desktop/Trailers/Classes/iPad/en.lproj/MainWindow_iPad.xib
+c000000004CE4C5F90000000000001CDE
+t1290061305
+s7390
+
+N/Users/lucas/Desktop/Trailers/Classes/iPhone/TrailersAppDelegate_iPhone.h
+c000000004CE4C72D0000000000000162
+t1290061613
+s354
+i<UIKit/UIKit.h>
+i"TrailersAppDelegate.h"
+i"TrailersViewController.h"
+
+N/Users/lucas/Desktop/Trailers/Classes/iPhone/TrailersAppDelegate_iPhone.m
+c000000004CE4C7250000000000000B62
+t1290061605
+s2914
+i"TrailersAppDelegate_iPhone.h"
+
+N/Users/lucas/Desktop/Trailers/Classes/iPhone/en.lproj/MainWindow_iPhone.xib
+c000000004CE4C0250000000000004104
+t1290059813
+s16644
 
 N/Users/lucas/Desktop/Trailers/Default-Landscape~ipad.png
 c000000004BD3923D00000000000665A9
@@ -729,11 +767,11 @@ t2
 s0
 
 N/Users/lucas/Desktop/Trailers/build/Debug-iphonesimulator/Trailers.app
-t1290063080
+t1290236414
 s1462
 
 N/Users/lucas/Desktop/Trailers/build/Debug-iphonesimulator/Trailers.app.dSYM
-t1290063080
+t1290236404
 s102
 
 N/Users/lucas/Desktop/Trailers/build/Debug-iphonesimulator/Trailers.app/Background.png
@@ -873,19 +911,19 @@ t1290060883
 s475
 
 N/Users/lucas/Desktop/Trailers/build/Debug-iphonesimulator/Trailers.app/Trailers
-t1290063080
-s212080
+t1290236404
+s212072
 
 N/Users/lucas/Desktop/Trailers/build/Debug-iphonesimulator/Trailers.app/en.lproj/InfoPlist.strings
 t1290060882
 s42
 
 N/Users/lucas/Desktop/Trailers/build/Debug-iphonesimulator/Trailers.app/en.lproj/MainWindow_iPad.nib
-t1290061735
+t1290236413
 s1107
 
 N/Users/lucas/Desktop/Trailers/build/Debug-iphonesimulator/Trailers.app/en.lproj/MainWindow_iPhone.nib
-t1290060882
+t1290236413
 s1459
 
 N/Users/lucas/Desktop/Trailers/build/Debug-iphonesimulator/Trailers.app/iPad-Default-LandscapeLeft.png
@@ -1097,8 +1135,8 @@ t1290063079
 s6320
 
 N/Users/lucas/Desktop/Trailers/build/Trailers.build/Debug-iphonesimulator/Trailers.build/Objects-normal/i386/Trailers.LinkFileList
-c000000004CE4CCE50000000000000C14
-t1290063077
+c000000004CE771EF0000000000000C14
+t1290236399
 s3092
 
 N/Users/lucas/Desktop/Trailers/build/Trailers.build/Debug-iphonesimulator/Trailers.build/Objects-normal/i386/TrailersAppDelegate-93E5AE2604588E15.o
@@ -1110,12 +1148,12 @@ t1290063079
 s47228
 
 N/Users/lucas/Desktop/Trailers/build/Trailers.build/Debug-iphonesimulator/Trailers.build/Objects-normal/i386/TrailersAppDelegate_iPad.o
-t1290063079
-s49320
+t1290236402
+s49316
 
 N/Users/lucas/Desktop/Trailers/build/Trailers.build/Debug-iphonesimulator/Trailers.build/Objects-normal/i386/TrailersAppDelegate_iPhone.o
-t1290063079
-s50300
+t1290236402
+s50296
 
 N/Users/lucas/Desktop/Trailers/build/Trailers.build/Debug-iphonesimulator/Trailers.build/Objects-normal/i386/TrailersViewController-48F365CBF3092E1F.o
 t2
@@ -1188,7 +1226,7 @@ s2006
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies311755877#311755877#0(0"0(0#1#0"8608548032#0"0#
+lSLF07#2@18"Check dependencies311929199#311929199#0(0"0(0#1#0"8631719520#0"0#
 
 CCompileC build/Trailers.build/Debug-iphonesimulator/Trailers.build/Objects-normal/i386/CDataScanner.o /Users/lucas/Desktop/Trailers/TouchJSON/CDataScanner.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s311755879.216204
@@ -1677,6 +1715,19 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@80"Compile /Users/lucas/Desktop/Trailers/Classes/../iPad/TrailersAppDelegate_iPad.m311755879#311755879#0(0"0(0#0#72"/Users/lucas/Desktop/Trailers/Classes/../iPad/TrailersAppDelegate_iPad.m8609692736#1901"    cd /Users/lucas/Desktop/Trailers    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/lucas/Desktop/Trailers/build/Trailers.build/Debug-iphonesimulator/Trailers.build/Trailers-generated-files.hmap -I/Users/lucas/Desktop/Trailers/build/Trailers.build/Debug-iphonesimulator/Trailers.build/Trailers-own-target-headers.hmap -I/Users/lucas/Desktop/Trailers/build/Trailers.build/Debug-iphonesimulator/Trailers.build/Trailers-all-target-headers.hmap -iquote /Users/lucas/Desktop/Trailers/build/Trailers.build/Debug-iphonesimulator/Trailers.build/Trailers-project-headers.hmap -F/Users/lucas/Desktop/Trailers/build/Debug-iphonesimulator -I/Users/lucas/Desktop/Trailers/build/Debug-iphonesimulator/include -I/Users/lucas/Desktop/Trailers/build/Trailers.build/Debug-iphonesimulator/Trailers.build/DerivedSources/i386 -I/Users/lucas/Desktop/Trailers/build/Trailers.build/Debug-iphonesimulator/Trailers.build/DerivedSources -include /var/folders/lr/lrcsUQH9E14zyqYv2H0UJk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Trailers-Prefix-gkkhmnwawyqowjfeeghkfkvmotwf/Trailers-Prefix.pch -c /Users/lucas/Desktop/Trailers/Classes/../iPad/TrailersAppDelegate_iPad.m -o /Users/lucas/Desktop/Trailers/build/Trailers.build/Debug-iphonesimulator/Trailers.build/Objects-normal/i386/TrailersAppDelegate_iPad.o0#
 
+CCompileC build/Trailers.build/Debug-iphonesimulator/Trailers.build/Objects-normal/i386/TrailersAppDelegate_iPad.o /Users/lucas/Desktop/Trailers/Classes/iPad/TrailersAppDelegate_iPad.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s311929199.975157
+e311929202.964725
+r1
+xCompileC
+xbuild/Trailers.build/Debug-iphonesimulator/Trailers.build/Objects-normal/i386/TrailersAppDelegate_iPad.o
+x/Users/lucas/Desktop/Trailers/Classes/iPad/TrailersAppDelegate_iPad.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@77"Compile /Users/lucas/Desktop/Trailers/Classes/iPad/TrailersAppDelegate_iPad.m311929199#311929202#0(0"0(0#0#69"/Users/lucas/Desktop/Trailers/Classes/iPad/TrailersAppDelegate_iPad.m8629662240#1898"    cd /Users/lucas/Desktop/Trailers    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/lucas/Desktop/Trailers/build/Trailers.build/Debug-iphonesimulator/Trailers.build/Trailers-generated-files.hmap -I/Users/lucas/Desktop/Trailers/build/Trailers.build/Debug-iphonesimulator/Trailers.build/Trailers-own-target-headers.hmap -I/Users/lucas/Desktop/Trailers/build/Trailers.build/Debug-iphonesimulator/Trailers.build/Trailers-all-target-headers.hmap -iquote /Users/lucas/Desktop/Trailers/build/Trailers.build/Debug-iphonesimulator/Trailers.build/Trailers-project-headers.hmap -F/Users/lucas/Desktop/Trailers/build/Debug-iphonesimulator -I/Users/lucas/Desktop/Trailers/build/Debug-iphonesimulator/include -I/Users/lucas/Desktop/Trailers/build/Trailers.build/Debug-iphonesimulator/Trailers.build/DerivedSources/i386 -I/Users/lucas/Desktop/Trailers/build/Trailers.build/Debug-iphonesimulator/Trailers.build/DerivedSources -include /var/folders/lr/lrcsUQH9E14zyqYv2H0UJk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Trailers-Prefix-gkkhmnwawyqowjfeeghkfkvmotwf/Trailers-Prefix.pch -c /Users/lucas/Desktop/Trailers/Classes/iPad/TrailersAppDelegate_iPad.m -o /Users/lucas/Desktop/Trailers/build/Trailers.build/Debug-iphonesimulator/Trailers.build/Objects-normal/i386/TrailersAppDelegate_iPad.o0#
+
 CCompileC build/Trailers.build/Debug-iphonesimulator/Trailers.build/Objects-normal/i386/TrailersAppDelegate_iPhone.o /Users/lucas/Desktop/Trailers/Classes/../iPhone/TrailersAppDelegate_iPhone.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s311755879.015049
 e311755879.216123
@@ -1689,6 +1740,19 @@ xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@84"Compile /Users/lucas/Desktop/Trailers/Classes/../iPhone/TrailersAppDelegate_iPhone.m311755879#311755879#0(0"0(0#0#76"/Users/lucas/Desktop/Trailers/Classes/../iPhone/TrailersAppDelegate_iPhone.m8607826720#1907"    cd /Users/lucas/Desktop/Trailers    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/lucas/Desktop/Trailers/build/Trailers.build/Debug-iphonesimulator/Trailers.build/Trailers-generated-files.hmap -I/Users/lucas/Desktop/Trailers/build/Trailers.build/Debug-iphonesimulator/Trailers.build/Trailers-own-target-headers.hmap -I/Users/lucas/Desktop/Trailers/build/Trailers.build/Debug-iphonesimulator/Trailers.build/Trailers-all-target-headers.hmap -iquote /Users/lucas/Desktop/Trailers/build/Trailers.build/Debug-iphonesimulator/Trailers.build/Trailers-project-headers.hmap -F/Users/lucas/Desktop/Trailers/build/Debug-iphonesimulator -I/Users/lucas/Desktop/Trailers/build/Debug-iphonesimulator/include -I/Users/lucas/Desktop/Trailers/build/Trailers.build/Debug-iphonesimulator/Trailers.build/DerivedSources/i386 -I/Users/lucas/Desktop/Trailers/build/Trailers.build/Debug-iphonesimulator/Trailers.build/DerivedSources -include /var/folders/lr/lrcsUQH9E14zyqYv2H0UJk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Trailers-Prefix-gkkhmnwawyqowjfeeghkfkvmotwf/Trailers-Prefix.pch -c /Users/lucas/Desktop/Trailers/Classes/../iPhone/TrailersAppDelegate_iPhone.m -o /Users/lucas/Desktop/Trailers/build/Trailers.build/Debug-iphonesimulator/Trailers.build/Objects-normal/i386/TrailersAppDelegate_iPhone.o0#
+
+CCompileC build/Trailers.build/Debug-iphonesimulator/Trailers.build/Objects-normal/i386/TrailersAppDelegate_iPhone.o /Users/lucas/Desktop/Trailers/Classes/iPhone/TrailersAppDelegate_iPhone.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s311929199.976233
+e311929202.964019
+r1
+xCompileC
+xbuild/Trailers.build/Debug-iphonesimulator/Trailers.build/Objects-normal/i386/TrailersAppDelegate_iPhone.o
+x/Users/lucas/Desktop/Trailers/Classes/iPhone/TrailersAppDelegate_iPhone.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@81"Compile /Users/lucas/Desktop/Trailers/Classes/iPhone/TrailersAppDelegate_iPhone.m311929199#311929202#0(0"0(0#0#73"/Users/lucas/Desktop/Trailers/Classes/iPhone/TrailersAppDelegate_iPhone.m8632714528#1904"    cd /Users/lucas/Desktop/Trailers    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/lucas/Desktop/Trailers/build/Trailers.build/Debug-iphonesimulator/Trailers.build/Trailers-generated-files.hmap -I/Users/lucas/Desktop/Trailers/build/Trailers.build/Debug-iphonesimulator/Trailers.build/Trailers-own-target-headers.hmap -I/Users/lucas/Desktop/Trailers/build/Trailers.build/Debug-iphonesimulator/Trailers.build/Trailers-all-target-headers.hmap -iquote /Users/lucas/Desktop/Trailers/build/Trailers.build/Debug-iphonesimulator/Trailers.build/Trailers-project-headers.hmap -F/Users/lucas/Desktop/Trailers/build/Debug-iphonesimulator -I/Users/lucas/Desktop/Trailers/build/Debug-iphonesimulator/include -I/Users/lucas/Desktop/Trailers/build/Trailers.build/Debug-iphonesimulator/Trailers.build/DerivedSources/i386 -I/Users/lucas/Desktop/Trailers/build/Trailers.build/Debug-iphonesimulator/Trailers.build/DerivedSources -include /var/folders/lr/lrcsUQH9E14zyqYv2H0UJk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Trailers-Prefix-gkkhmnwawyqowjfeeghkfkvmotwf/Trailers-Prefix.pch -c /Users/lucas/Desktop/Trailers/Classes/iPhone/TrailersAppDelegate_iPhone.m -o /Users/lucas/Desktop/Trailers/build/Trailers.build/Debug-iphonesimulator/Trailers.build/Objects-normal/i386/TrailersAppDelegate_iPhone.o0#
 
 CCompileC build/Trailers.build/Debug-iphonesimulator/Trailers.build/Objects-normal/i386/TrailersViewController-48F365CBF3092E1F.o /Users/lucas/Desktop/Trailers/Classes/TrailersViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
 r0
@@ -1764,6 +1828,22 @@ r1
 xCompileXIB
 x/Users/lucas/Desktop/Trailers/Classes/MovieDetailView.xib
 lSLF07#2@38"CompileXIB Classes/MovieDetailView.xib311755240#311755241#0(0"0(0#0#57"/Users/lucas/Desktop/Trailers/Classes/MovieDetailView.xib8611950880#562"    cd /Users/lucas/Desktop/Trailers    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/lucas/Desktop/Trailers/build/Debug-iphonesimulator/Trailers.app/MovieDetailView.nib /Users/lucas/Desktop/Trailers/Classes/MovieDetailView.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/lucas/Desktop/Trailers/Classes/iPad/en.lproj/MainWindow_iPad.xib
+s311929205.161638
+e311929213.554422
+r1
+xCompileXIB
+x/Users/lucas/Desktop/Trailers/Classes/iPad/en.lproj/MainWindow_iPad.xib
+lSLF07#2@52"CompileXIB Classes/iPad/en.lproj/MainWindow_iPad.xib311929205#311929213#0(0"0(0#0#71"/Users/lucas/Desktop/Trailers/Classes/iPad/en.lproj/MainWindow_iPad.xib8631170688#585"    cd /Users/lucas/Desktop/Trailers    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/lucas/Desktop/Trailers/build/Debug-iphonesimulator/Trailers.app/en.lproj/MainWindow_iPad.nib /Users/lucas/Desktop/Trailers/Classes/iPad/en.lproj/MainWindow_iPad.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/lucas/Desktop/Trailers/Classes/iPhone/en.lproj/MainWindow_iPhone.xib
+s311929205.162972
+e311929213.906861
+r1
+xCompileXIB
+x/Users/lucas/Desktop/Trailers/Classes/iPhone/en.lproj/MainWindow_iPhone.xib
+lSLF07#2@56"CompileXIB Classes/iPhone/en.lproj/MainWindow_iPhone.xib311929205#311929213#0(0"0(0#0#75"/Users/lucas/Desktop/Trailers/Classes/iPhone/en.lproj/MainWindow_iPhone.xib8631066656#591"    cd /Users/lucas/Desktop/Trailers    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/lucas/Desktop/Trailers/build/Debug-iphonesimulator/Trailers.app/en.lproj/MainWindow_iPhone.nib /Users/lucas/Desktop/Trailers/Classes/iPhone/en.lproj/MainWindow_iPhone.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
 
 CCompileXIB /Users/lucas/Desktop/Trailers/MenuController.xib
 s311753684.391783
@@ -2105,23 +2185,23 @@ xImages/Default/iPhone-Default.png
 lSLF07#2@38"Copy Images/Default/iPhone-Default.png311753682#311753683#0(0"0(0#0#63"/Users/lucas/Desktop/Trailers/Images/Default/iPhone-Default.png8611504544#465"    cd /Users/lucas/Desktop/Trailers    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/lucas/Desktop/Trailers/Images/Default/iPhone-Default.png /Users/lucas/Desktop/Trailers/build/Debug-iphonesimulator/Trailers.app0#
 
 CGenerateDSYMFile /Users/lucas/Desktop/Trailers/build/Debug-iphonesimulator/Trailers.app.dSYM /Users/lucas/Desktop/Trailers/build/Debug-iphonesimulator/Trailers.app/Trailers
-s311755880.821079
-e311755880.921703
+s311929204.719965
+e311929205.159186
 r1
 xGenerateDSYMFile
 x/Users/lucas/Desktop/Trailers/build/Debug-iphonesimulator/Trailers.app.dSYM
 x/Users/lucas/Desktop/Trailers/build/Debug-iphonesimulator/Trailers.app/Trailers
-lSLF07#2@112"GenerateDSYMFile build/Debug-iphonesimulator/Trailers.app.dSYM build/Debug-iphonesimulator/Trailers.app/Trailers311755880#311755880#0(0"0(0#0#79"/Users/lucas/Desktop/Trailers/build/Debug-iphonesimulator/Trailers.app/Trailers8613985216#359"    cd /Users/lucas/Desktop/Trailers    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/lucas/Desktop/Trailers/build/Debug-iphonesimulator/Trailers.app/Trailers -o /Users/lucas/Desktop/Trailers/build/Debug-iphonesimulator/Trailers.app.dSYM0#
+lSLF07#2@112"GenerateDSYMFile build/Debug-iphonesimulator/Trailers.app.dSYM build/Debug-iphonesimulator/Trailers.app/Trailers311929204#311929205#0(0"0(0#0#79"/Users/lucas/Desktop/Trailers/build/Debug-iphonesimulator/Trailers.app/Trailers8634286272#359"    cd /Users/lucas/Desktop/Trailers    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/lucas/Desktop/Trailers/build/Debug-iphonesimulator/Trailers.app/Trailers -o /Users/lucas/Desktop/Trailers/build/Debug-iphonesimulator/Trailers.app.dSYM0#
 
 CLd /Users/lucas/Desktop/Trailers/build/Debug-iphonesimulator/Trailers.app/Trailers normal i386
-s311755880.491887
-e311755880.820983
+s311929202.964791
+e311929204.719805
 r1
 xLd
 x/Users/lucas/Desktop/Trailers/build/Debug-iphonesimulator/Trailers.app/Trailers
 xnormal
 xi386
-lSLF07#2@84"Link /Users/lucas/Desktop/Trailers/build/Debug-iphonesimulator/Trailers.app/Trailers311755880#311755880#0(0"0(0#0#0"8615941760#883"    cd /Users/lucas/Desktop/Trailers    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -L/Users/lucas/Desktop/Trailers/build/Debug-iphonesimulator -F/Users/lucas/Desktop/Trailers/build/Debug-iphonesimulator -filelist /Users/lucas/Desktop/Trailers/build/Trailers.build/Debug-iphonesimulator/Trailers.build/Objects-normal/i386/Trailers.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework CoreGraphics -framework UIKit -framework MediaPlayer -framework Foundation -o /Users/lucas/Desktop/Trailers/build/Debug-iphonesimulator/Trailers.app/Trailers0#
+lSLF07#2@84"Link /Users/lucas/Desktop/Trailers/build/Debug-iphonesimulator/Trailers.app/Trailers311929202#311929204#0(0"0(0#0#0"8632840640#883"    cd /Users/lucas/Desktop/Trailers    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -L/Users/lucas/Desktop/Trailers/build/Debug-iphonesimulator -F/Users/lucas/Desktop/Trailers/build/Debug-iphonesimulator -filelist /Users/lucas/Desktop/Trailers/build/Trailers.build/Debug-iphonesimulator/Trailers.build/Objects-normal/i386/Trailers.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework CoreGraphics -framework UIKit -framework MediaPlayer -framework Foundation -o /Users/lucas/Desktop/Trailers/build/Debug-iphonesimulator/Trailers.app/Trailers0#
 
 CProcessInfoPlistFile /Users/lucas/Desktop/Trailers/build/Debug-iphonesimulator/Trailers.app/Info.plist Trailers-Info.plist
 s311754930.280947
@@ -2175,10 +2255,10 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@30"Precompile Trailers-Prefix.pch311755877#311755879#0(0"0(0#0#49"/Users/lucas/Desktop/Trailers/Trailers-Prefix.pch8611478912#1745"    cd /Users/lucas/Desktop/Trailers    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/lucas/Desktop/Trailers/build/Trailers.build/Debug-iphonesimulator/Trailers.build/Trailers-generated-files.hmap -I/Users/lucas/Desktop/Trailers/build/Trailers.build/Debug-iphonesimulator/Trailers.build/Trailers-own-target-headers.hmap -I/Users/lucas/Desktop/Trailers/build/Trailers.build/Debug-iphonesimulator/Trailers.build/Trailers-all-target-headers.hmap -iquote /Users/lucas/Desktop/Trailers/build/Trailers.build/Debug-iphonesimulator/Trailers.build/Trailers-project-headers.hmap -F/Users/lucas/Desktop/Trailers/build/Debug-iphonesimulator -I/Users/lucas/Desktop/Trailers/build/Debug-iphonesimulator/include -I/Users/lucas/Desktop/Trailers/build/Trailers.build/Debug-iphonesimulator/Trailers.build/DerivedSources/i386 -I/Users/lucas/Desktop/Trailers/build/Trailers.build/Debug-iphonesimulator/Trailers.build/DerivedSources -c /Users/lucas/Desktop/Trailers/Trailers-Prefix.pch -o /var/folders/lr/lrcsUQH9E14zyqYv2H0UJk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Trailers-Prefix-gkkhmnwawyqowjfeeghkfkvmotwf/Trailers-Prefix.pch.gch0#
 
 CTouch /Users/lucas/Desktop/Trailers/build/Debug-iphonesimulator/Trailers.app
-s311755880.924447
-e311755880.927708
+s311929213.907181
+e311929214.299316
 r1
 xTouch
 x/Users/lucas/Desktop/Trailers/build/Debug-iphonesimulator/Trailers.app
-lSLF07#2@76"Touch /Users/lucas/Desktop/Trailers/build/Debug-iphonesimulator/Trailers.app311755880#311755880#0(0"0(0#0#0"8610037344#261"    cd /Users/lucas/Desktop/Trailers    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/lucas/Desktop/Trailers/build/Debug-iphonesimulator/Trailers.app0#
+lSLF07#2@76"Touch /Users/lucas/Desktop/Trailers/build/Debug-iphonesimulator/Trailers.app311929213#311929214#0(0"0(0#0#0"8631030848#261"    cd /Users/lucas/Desktop/Trailers    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/lucas/Desktop/Trailers/build/Debug-iphonesimulator/Trailers.app0#
 
