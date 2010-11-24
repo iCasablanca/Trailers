@@ -62,12 +62,12 @@
 	if ( self = [super init] )
 	{
 		self.title = [dict objectForKey:@"title"];
-		self.movieURL = [NSURL URLWithString:[NSString stringWithFormat:@"http://apple.com%@",[dict objectForKey:@"location"]]];
+		self.movieURL = [NSURL URLWithString:[NSString stringWithFormat:@"http://trailers.apple.com%@",[dict objectForKey:@"location"]]];
+		
 		self.imageURL = [NSURL URLWithString:[dict objectForKey:@"poster"]];
 		if( [self.imageURL host] == NULL ){
-			NSString *newURL = [NSString stringWithFormat:@"http://trailers.apple.com%@",[self.imageURL path]];
-			NSLog(@"%@",newURL);
-			self.imageURL = [NSURL URLWithString:newURL];
+			NSString *newImageURL = [NSString stringWithFormat:@"http://trailers.apple.com%@",[self.imageURL path]];
+			self.imageURL = [NSURL URLWithString:newImageURL];
 		}
 		[self setReleaseDateWithString:[dict objectForKey:@"releasedate"]];
 		
@@ -91,11 +91,25 @@
 	return self;
 } 
 
+//+ (Movie*)movieWithURL:(NSURL*)url;
+//{
+//	return [[[[self class] alloc] initWithURL:url] autorelease];
+//}
+//-(id)initWithURL:(NSURL*)url;{
+//	if ( self = [super init] )
+//	{
+//		self.movieURL = url;
+//		[self loadMoreInfo];
+//	}
+//	return self;
+//} 
+
 - (void)setReleaseDateWithString:(NSString*)s;
 {
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"EEE, d LLL u H:m:s"];
     self.releaseDate = [dateFormatter dateFromString:s];
+	[dateFormatter release];
 }
 
 - (void)loadMoreInfo;
@@ -104,10 +118,10 @@
     [pageConnection start];
     pageData = [[NSMutableData alloc] init];
 	
-    NSRange range = [[self.movieURL relativeString] rangeOfString:@"/trailers"];
-    NSString *path = [[self.movieURL relativeString] substringFromIndex:range.location];
-    NSURL *trailersURL = [NSURL URLWithString:[NSString stringWithFormat:@"http://trailers.apple.com%@includes/playlists/web.inc",path]];
-    
+    NSRange range = [[self.movieURL relativeString] rangeOfString:@".com/trailers"];
+    NSString *path = [[self.movieURL relativeString] substringFromIndex:range.location+range.length];
+    NSURL *trailersURL = [NSURL URLWithString:[NSString stringWithFormat:@"http://trailers.apple.com/trailers%@includes/playlists/web.inc",path]];
+
     trailersConnection = [[NSURLConnection alloc] initWithRequest:[NSURLRequest requestWithURL:trailersURL] delegate:self];
     [trailersConnection start];
     trailersData = [[NSMutableData alloc] init];
@@ -123,19 +137,16 @@
     if (connection == pageConnection){
         NSString *html = [[NSString alloc] initWithData:pageData encoding:NSASCIIStringEncoding];
         [html retain];
-        
+        NSLog(@"%@",movieURL);
         //DESCRIPTION
         NSRange range = [html rangeOfString:@"<div id=\"more-description\" class=\"read-more-container\">"];
         if(range.location==NSNotFound){
             range = [html rangeOfString:@"<div id=\"movie-description\""];
         }
         if(range.location==NSNotFound){
-            /*
-             [detail setDescription:@"Movie not supported."];
-             [detail layoutSubviews];
-             [detail stopAnimating];
+             self.description = @"Movie not supported.";
+			[self.view updateDetailDescription];
              return;
-             */
         }
         range.location += range.length;
         range = [html rangeOfString:@"<p>" options:0 range:NSMakeRange(range.location, [html length]-range.location)];
@@ -214,7 +225,7 @@
 				
 				
 				for(NSString *titlesHTML in titlesSplit){
-					NSMutableDictionary *dict = [[NSMutableDictionary alloc] init];
+					NSMutableDictionary *dict = [NSMutableDictionary dictionary];
 					
 					[dict setObject:[self parseHTML:titlesHTML from:@">" to:@"<"] forKey:@"title"];
 					[trailersArray addObject:dict];
@@ -229,10 +240,10 @@
 						
 						[resolutionSplit removeObjectAtIndex:0];
 						
-						NSMutableArray *resolutionArray = [[NSMutableArray alloc] init];
+						NSMutableArray *resolutionArray = [NSMutableArray array];
 						
 						for(NSString *resolutionHTML in resolutionSplit){
-							NSMutableDictionary *resolutionDict = [[NSMutableDictionary alloc] init];
+							NSMutableDictionary *resolutionDict = [NSMutableDictionary dictionary];
 							
 							[resolutionDict setObject:[self parseHTML:resolutionHTML from:@"href=\"" to:@"\""] forKey:@"link"];
 							
@@ -256,7 +267,7 @@
 			
 		}else{
 			
-			NSMutableDictionary *trailerDict = [[NSMutableDictionary alloc] init];
+			NSMutableDictionary *trailerDict = [NSMutableDictionary dictionary];
 			
 			[trailerDict setObject:[self parseHTML:html from:@"<h3>" to:@"</h3>"] forKey:@"title"];		
 			
@@ -266,10 +277,10 @@
 				
 				[resolutionSplit removeObjectAtIndex:0];
 				
-				NSMutableArray *resolutionArray = [[NSMutableArray alloc] init];
+				NSMutableArray *resolutionArray = [NSMutableArray array];
 				
 				for(NSString *resolutionHTML in resolutionSplit){
-					NSMutableDictionary *resolutionDict = [[NSMutableDictionary alloc] init];
+					NSMutableDictionary *resolutionDict = [NSMutableDictionary dictionary];
 					
 					[resolutionDict setObject:[self parseHTML:resolutionHTML from:@"href=\"" to:@"\""] forKey:@"link"];
 					
@@ -304,14 +315,14 @@
 		}
 		if( [html rangeOfString:@"<span id=\"single-trailer-info\">"].location != NSNotFound ){
 			
-			trailersSplit = [[NSMutableArray alloc] init];
+			trailersSplit = [NSMutableArray array];
 			[trailersSplit addObject:html];
 			
 		}
 		
 		for(NSString *trailersHTML in trailersSplit){
 			
-			NSMutableDictionary *trailerDict = [[NSMutableDictionary alloc] init];
+			NSMutableDictionary *trailerDict = [NSMutableDictionary dictionary];
 			
 			[trailerDict setObject:[self parseHTML:trailersHTML from:@"<h3>" to:@"</h3>"] forKey:@"title"];
 			[trailerDict setObject:[self parseHTML:trailersHTML from:@"<br />Runtime: " to:@"</p>"] forKey:@"runtime"];
@@ -323,10 +334,10 @@
 				
 				[resolutionSplit removeObjectAtIndex:0];
 				
-				NSMutableArray *resolutionArray = [[NSMutableArray alloc] init];
+				NSMutableArray *resolutionArray = [NSMutableArray array];
 				
 				for(NSString *resolutionHTML in resolutionSplit){
-					NSMutableDictionary *resolutionDict = [[NSMutableDictionary alloc] init];
+					NSMutableDictionary *resolutionDict = [NSMutableDictionary dictionary];
 					
 					[resolutionDict setObject:[self parseHTML:resolutionHTML from:@"<a href=\"" to:@"\""] forKey:@"link"];
 					[resolutionDict setObject:[self parseHTML:resolutionHTML from:@"\"target-quicktimeplayer\">" to:@" "] forKey:@"resolution"];
