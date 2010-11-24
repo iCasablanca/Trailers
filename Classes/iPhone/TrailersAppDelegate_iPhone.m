@@ -7,6 +7,7 @@
 //
 
 #import "TrailersAppDelegate_iPhone.h"
+#import "Movie.h"
 
 @implementation TrailersAppDelegate_iPhone
 
@@ -31,6 +32,11 @@
 	
 	return YES;
 }
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
+//	[view showMovieWithURL:url];
+	return YES;
+}
+
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {

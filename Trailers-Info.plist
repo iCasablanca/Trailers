@@ -27,6 +27,17 @@
 	<string>${PRODUCT_NAME}</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>trailers</string>
+			</array>
+			<key>CFBundleURLName</key>
+			<string>com.lucasharding.trailers</string>
+		</dict>
+	</array>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>

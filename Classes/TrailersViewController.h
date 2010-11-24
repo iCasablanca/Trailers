@@ -17,6 +17,7 @@
     MPMoviePlayerViewController *movie;
 
     int orientation;
+    MovieView *urlMovie;
 }
 - (void)loadMoviesWithMode:(MovieMode)mode;
 - (void)loadMoviesWithTerm:(NSString*)term;

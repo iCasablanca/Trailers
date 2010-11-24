@@ -104,6 +104,19 @@
     [self performSelectorOnMainThread:@selector(updateMovies:) withObject:[Movie moviesWithTerm:term] waitUntilDone:NO];
 
 }
+//- (void)showMovieWithURL:(NSURL*)url;
+//{
+//	[UIView setAnimationsEnabled:NO];
+//	Movie *m = [Movie movieWithURL:[NSURL URLWithString:[[url absoluteString] stringByReplacingOccurrencesOfString:@"trailers://" withString:@"http://"]]];
+//	urlMovie = [MovieView viewWithMovie:m];
+//	urlMovie.trailersViewController = self;
+//	urlMovie.tag = 0;
+//	[scrollView addSubview:urlMovie];
+//	[urlMovie touchesEnded:NULL withEvent:NULL];
+//	
+//	[UIView setAnimationsEnabled:YES];
+//
+//}
 - (void)clearMovies;
 {
     [UIView beginAnimations:NULL context:nil];

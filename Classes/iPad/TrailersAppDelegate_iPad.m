@@ -29,6 +29,13 @@
     
     [window makeKeyAndVisible];
 	
+	[self application:NULL openURL:[NSURL URLWithString:@"trailers.apple.com/trailers/summit/sourcecode/"] sourceApplication:NULL annotation:NULL];
+	 
+	
+	return YES;
+}
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
+	//	[view showMovieWithURL:url];
 	return YES;
 }
 
